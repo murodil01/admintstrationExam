@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: rgba(254, 175, 0, 1);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 44px 0 85px 0;
+}
+
+.admin {
+  max-width: 475px;
+  margin: auto;
+  max-height: 550px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  padding: 44px 0 85px 0;
+
+  .admin__text {
+    .admin__title {
+      display: flex;
+      justify-content: center;
+      column-gap: 12.5px;
+      padding: 0 44px 0 0;
+
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39.01px;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .line {
+        border: 6px solid rgba(248, 212, 66, 1);
+      }
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26.82px;
+      color: rgba(0, 0, 0, 1);
+      padding-bottom: 9px;
+    }
+
+    .admin__retitle {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.07px;
+      color: rgba(108, 108, 108, 1);
+    }
+  }
+
+  .signup-form {
+    padding: 50px 44px 0 44px;
+    text-align: left;
+
+    .login-text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.07px;
+      color: rgba(108, 108, 108, 1);
+    }
+
+    .login-password {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.07px;
+      color: rgba(108, 108, 108, 1);
+    }
+  }
+
+  .signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+  }
+
+  .signup-btn {
+    width: 100%;
+    padding: 14px 0;
+    background: rgba(254, 175, 0, 1);
+    border-radius: 4px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    text-align: center;
+
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.07px;
+      color: rgba(255, 255, 255, 1);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+  }
+
+  .signup-btn:hover {
+    background: #e6b800;
+  }
+
+  .sign-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#formErrorText {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: red;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:focus:invalid {
+  outline: 1px solid red;
+}
+
+
+.sign {
+  max-width: 475px;
+  margin: auto;
+  max-height: 550px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  padding: 44px 0 85px 0;
+
+  .sign__text {
+    .sign__title {
+      display: flex;
+      justify-content: center;
+      column-gap: 12.5px;
+      padding: 0 44px 0 0;
+
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39.01px;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .line {
+        border: 6px solid rgba(248, 212, 66, 1);
+      }
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26.82px;
+      color: rgba(0, 0, 0, 1);
+      padding-bottom: 9px;
+    }
+
+    .sign__retitle {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.07px;
+      color: rgba(108, 108, 108, 1);
+    }
+  }
+
+  .signup-form {
+    padding: 50px 44px 0 44px;
+    text-align: left;
+
+    .login-text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.07px;
+      color: rgba(108, 108, 108, 1);
+    }
+
+    .login-password {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.07px;
+      color: rgba(108, 108, 108, 1);
+    }
+  }
+
+  .signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+  }
+
+  .signup-btn {
+    width: 100%;
+    padding: 14px 0;
+    background: rgba(254, 175, 0, 1);
+    border-radius: 4px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    text-align: center;
+
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.07px;
+      color: rgba(255, 255, 255, 1);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+  }
+
+  .signup-btn:hover {
+    background: #e6b800;
+  }
+
+  .sign-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+  }
+}
+
+.dashboard {
+  display: flex;
+  width: auto;
+  min-height: 100vh;
+}
+
+.sidebar {
+  min-width: 250px;
+  background-color: #f0e4d7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.dashboard-list {
+  background-color: rgba(229, 229, 229, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile .profile__text {
+  display: flex;
+  column-gap: 12px;
+}
+
+.profile .profile__line {
+  background-color: rgba(248, 212, 66, 1);
+  border: 4px solid rgba(248, 212, 66, 1);
+}
+
+.profile h3,
+.profile p {
+  margin: 10px 0;
+}
+
+.profile__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+}
+
+.profile__retitle {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.72px;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+} 
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  color: rgba(254, 175, 0, 1);
+  text-align: center;
+}
+
+.menu-item {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: rgba(254, 175, 0, 1);
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+
+.menu-item .active {
+  background: rgba(254, 175, 0, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.logout {
+  margin-top: auto;
+  background: #d9534f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: rgba(242, 234, 225, 1);
+}
+
+.content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.82px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.search i {
+  font-size: 20px;
+  color: #000;
+}
+
+.search .icon {
+  position: absolute;
+  left: 95%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+}
+
+.search input {
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  width: 212px;
+  height: 37px;
+  padding-left: 13px;
+  outline: none;
+}
+
+.add-student-btn {
+  padding: 13px 26px;
+  background: rgba(254, 175, 0, 1);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  color: rgba(255, 255, 255, 1);
+}
+
+table {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(229, 229, 229, 1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.63px;
+  color: rgba(172, 172, 172, 1);
+}
+
+td {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  color: rgba(0, 0, 0, 1);
+  background-color: white;
+}
+
+.actions button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions .edit {
+  font-size: 22px;
+  color: rgba(254, 175, 0, 1);
+  background-color: transparent;
+}
+
+.actions .delete {
+  font-size: 22px;
+  color: rgba(254, 175, 0, 1);
+  background-color: transparent;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(242, 234, 225, 1);
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: left;
+  color: black;
+}
+
+.modal-content input {
+  border-radius: 4px;
+  border:1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 1), 0 2px 7px rgba(255, 255, 255, 1);
+  outline: none;
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+}
+
+.modal-content button {
+  border-radius: 4px;
+  border: 1px solid rgba(254, 175, 0, 1);
+  background-color: rgba(254, 175, 0, 1);
+  color: rgba(229, 229, 229, 1);
+  padding: 4px;
+  cursor: pointer;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.details-modal .modal-content {
+  width: 300px;
+  color: black;
+}
+
+.profile-card {
+  text-align: center;
+  color: black;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+

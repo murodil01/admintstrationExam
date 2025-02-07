@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="dashboard">
+            <aside class="sidebar">
+                <div class="profile">
+                    <div class="profile__text">
+                        <span class="profile__line"></span>
+                        <h3 class="profile__title">Admin Students</h3>
+                    </div>
+                    <img src="./images/header-img.png" alt="Profile Picture" width="100" height="100">
+                    <h3 class="profile__retitle">Karthi Madesh</h3>
+                    <p>Admin</p>
+                </div>
+                <nav>
+                    <button class="menu-item active"><i class='bx bxs-graduation'></i> Students</button>
+                </nav>
+                <button class="logout">
+                    <a href="./index.html">Logout <i class='bx bx-log-out'></i></a>
+                </button>
+            </aside>
+            <main class="content">
+                <div class="search">
+                    <a href="./signin.html"><i class='bx bx-arrow-back'></i></a>
+                    <i class='icon bx bx-search-alt-2'></i>
+                    <div>
+                        <input type="text" placeholder="Search">
+                        <i class='bx bxs-bell-ring'></i>
+                    </div>
+                </div>
+                <div class="dashboard-list">
+                    <h3>Students List</h3>
+                    <button id="addStudentBtn" class="add-student-btn">ADD NEW STUDENT</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Enroll Number</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentsTable">
+                    </tbody>
+                </table>
+            </main>
+        </div>
+
+        <div id="studentModal" class="modal">
+            <div class="modal-content">
+                <h2 id="modalTitle">Add Student</h2>
+                <label>
+                    Name:
+                    <input type="text" id="studentName">
+                </label>
+                <label>
+                    Email:
+                    <input type="email" id="studentEmail">
+                </label>
+                <label>
+                    Phone:
+                    <input type="text" id="studentPhone">
+                </label>
+                <label>
+                    Enroll Number:
+                    <input type="text" id="studentEnroll">
+                </label>
+                <label>
+                    Date:
+                    <input type="date" id="studentDate">
+                </label>
+                <div class="modal-actions">
+                    <button id="saveStudentBtn">Save</button>
+                    <button id="closeModalBtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

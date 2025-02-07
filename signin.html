@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="sign">
+            <div class="sign__text">
+                <div class="sign__title">
+                    <span class="line"></span>
+                    <h1>Admin Students</h1>
+                </div>
+                <p>Sign IN</p>
+                <span class="sign__retitle">Enter your credentials to access your account</span>
+            </div>
+
+            <form class="signup-form">
+                <label class="login-text" for="login">Login</label>
+                <input type="text" id="login" placeholder="Enter your login" required />
+                <p id="loginError" class="error-message" style="color: red; display: none;">Login is required</p>
+
+                <label class="login-password" for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required />
+                <p id="passwordError" class="error-message" style="color: red; display: none;">Password is required</p>
+
+                <button type="submit" class="signup-btn"><a>SIGN IN</a></button>
+
+            </form>
+            <a class="sign-link" href="./index.html">Sign up</a>
+        </section>
+    </div>
+
+    <script src="./script3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="admin">
+            <div class="admin__text">
+                <div class="admin__title">
+                    <span class="line"></span>
+                    <h1>Admin Students</h1>
+                </div>
+                <p>Sign UP</p>
+                <span class="admin__retitle">Enter your credentials to access your account</span>
+            </div>
+    
+            <form class="signup-form" id="signupForm">
+                <label class="login-text" for="login">Enter new login</label>
+                <input type="text" id="login" placeholder="Enter your login" required />
+                <p id="loginError" class="error-message" style="color: red; display: none;">Login is required</p>
+    
+                <label class="login-password" for="password">Create new password</label>
+                <input type="password" id="password" placeholder="Enter your password" required />
+                <p id="passwordError" class="error-message" style="color: red; display: none;">Password is required</p>
+    
+                <button type="submit" class="signup-btn"><a>SIGN UP</a></button>
+            </form>
+        </section>
+    </div>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script2.js"></script>
+</body>
+
+</html>
